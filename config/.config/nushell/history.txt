@@ -1,0 +1,5 @@
+config
+config nu
+$env.EDITOR = "code"
+config nu
+exit
