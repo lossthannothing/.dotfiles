@@ -145,9 +145,11 @@ mkcd() {
 }
 # 为 curl wget git 等设置代理
 proxy () {
-  export ALL_PROXY="socks5://127.0.0.1:10808"
-  export all_proxy="socks5://127.0.0.1:10808"
+export HTTP_PROXY="http://127.0.0.1:7897"
+export HTTPS_PROXY="http://127.0.0.1:7897"
+export ALL_PROXY="http://127.0.0.1:7897"
 }
+
 
 # 取消代理
 unproxy () {
@@ -162,4 +164,4 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
-
+# cunzhi mcp cli
