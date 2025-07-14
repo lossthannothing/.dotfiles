@@ -14,3 +14,5 @@ compinit
 if command -v sheldon &> /dev/null; then
   eval "$(sheldon source)"
 fi
+eval "$(fnm env)"
+export PATH=$HOME/.local/bin:$PATH
