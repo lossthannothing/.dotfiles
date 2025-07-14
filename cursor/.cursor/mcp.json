@@ -18,6 +18,9 @@
         "ENABLE_GUI": "false"
       }
     },
+    "寸止": {
+      "command": "寸止.exe"
+    },
     "context7": {
       "command": "npx",
       "args": [

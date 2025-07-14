@@ -16,8 +16,12 @@
     "deepwiki": {
       "url": "https://mcp.deepwiki.com/mcp"
     },
-    "寸止": {
-      "command": "寸止.exe"
+    "sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
     },
     "shrimp-task-manager": {
       "command": "npx",

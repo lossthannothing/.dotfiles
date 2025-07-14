@@ -1,9 +1,9 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+#   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+# fi
 
 
 # ~/.zshrc
@@ -154,6 +154,8 @@ export ALL_PROXY="http://127.0.0.1:7897"
 # 取消代理
 unproxy () {
   unset ALL_PROXY
+  unset HTTP_PROXY
+  unset HTTP_PROXY
   unset all_proxy
 }
 
@@ -165,3 +167,5 @@ case ":$PATH:" in
 esac
 # pnpm end
 # cunzhi mcp cli
+
+eval "$(starship init zsh)"
