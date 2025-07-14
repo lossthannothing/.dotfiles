@@ -1,10 +1,7 @@
 {
   "mcpServers": {
-    "playwright": {
-      "command": "npx",
-      "args": [
-        "@playwright/mcp@latest"
-      ]
+    "deepwiki": {
+      "serverUrl": "https://mcp.deepwiki.com/sse"
     },
     "context7": {
       "command": "npx",
@@ -12,9 +9,6 @@
         "-y",
         "@upstash/context7-mcp@latest"
       ]
-    },
-    "deepwiki": {
-      "url": "https://mcp.deepwiki.com/mcp"
     },
     "sequential-thinking": {
       "command": "npx",
