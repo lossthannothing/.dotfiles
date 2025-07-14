@@ -18,6 +18,13 @@
         "ENABLE_GUI": "false"
       }
     },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
+    },
     "寸止": {
       "command": "寸止.exe"
     },
