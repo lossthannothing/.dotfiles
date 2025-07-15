@@ -15,4 +15,13 @@ if command -v sheldon &> /dev/null; then
   eval "$(sheldon source)"
 fi
 eval "$(fnm env)"
+
+# load aliases and custom function 
+if [ -r "$HOME/.zsh/alases.zsh" ]; then
+  source "$HOME/.zsh/alases.zsh"
+fi
+
+if [ -r "$HOME/.zsh/functions.zsh" ]; then
+  source "$HOME/.zsh/functions.zsh"
+fi
 export PATH=$HOME/.local/bin:$PATH
