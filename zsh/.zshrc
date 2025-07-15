@@ -17,8 +17,8 @@ fi
 eval "$(fnm env)"
 
 # load aliases and custom function 
-if [ -r "$HOME/.zsh/alases.zsh" ]; then
-  source "$HOME/.zsh/alases.zsh"
+if [ -r "$HOME/.zsh/aliases.zsh" ]; then
+  source "$HOME/.zsh/aliases.zsh"
 fi
 
 if [ -r "$HOME/.zsh/functions.zsh" ]; then
