@@ -6,18 +6,6 @@
         "@playwright/mcp@latest"
       ]
     },
-    "shrimp-task-manager": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "mcp-shrimp-task-manager"
-      ],
-      "env": {
-        "DATA_DIR": "shrimp-data",
-        "TEMPLATES_USE": "en",
-        "ENABLE_GUI": "false"
-      }
-    },
     "sequential-thinking": {
       "command": "npx",
       "args": [
@@ -37,6 +25,15 @@
     },
     "deepwiki": {
       "serverUrl": "https://mcp.deepwiki.com/sse"
+    },
+    "serena": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/oraios/serena",
+        "serena",
+        "start-mcp-server"
+      ]
     }
   }
 }
